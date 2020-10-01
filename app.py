@@ -25,6 +25,6 @@ def webserver(host, port, google_sheet, credentials_file):
 
     @app.route('/main')
     def main_page():
-        return "This is the main page"
+        return render_template('main_page.html')
 
     app.run(debug=True, host=host, port=port)
